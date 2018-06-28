@@ -1,7 +1,9 @@
-var GtfsRealtimeBindings = require("gtfs-realtime-bindings");
-var request = require("request");
+const MTAKEY = keys.MTA;
 
-var requestSettings = {
+const GtfsRealtimeBindings = require("gtfs-realtime-bindings");
+const request = require("request");
+
+const requestSettings = {
   method: "GET",
   url: `http://datamine.mta.info/mta_esi.php?key=${MTAKEY}&feed_id=21`,
   encoding: null
